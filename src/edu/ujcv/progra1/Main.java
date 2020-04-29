@@ -97,10 +97,10 @@ public class Main {
                         x = 1;
                         break;
                     default:
-                        System.out.println("Debes ingresar un numero valido");
+                        System.out.println(" ingresar numero valido");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Debes insertar un número");
+                System.out.println("insertar un número por favor");
                 sc.next();
 
             }
