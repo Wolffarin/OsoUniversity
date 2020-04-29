@@ -3,7 +3,7 @@ package edu.ujcv.progra1;
 public class MenuPrincipal {
 
 
-    public String MenuPrincipal() {
+    public static String MenuPrincipal() {
         // write your code here
         System.out.println("universidad 2020");
         System.out.println("Que opcion desea ejecutar" +

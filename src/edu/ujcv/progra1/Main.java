@@ -13,6 +13,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Lectorteclado lc = new Lectorteclado();
         System.out.print(MenuPrincipal.MenuPrincipal());
+        Lectorteclado lt;
         int Opc = lt.obtenerEnteroValidado("Ingrese una Opcion Valida");
 
         ArrayList<String> alumnosGenerados = new ArrayList<>();
