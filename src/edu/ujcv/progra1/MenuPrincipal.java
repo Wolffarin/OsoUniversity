@@ -21,4 +21,7 @@ public class MenuPrincipal {
 
         return mensaje;
     }
+
+    public void evaluacionTernas() {
+    }
 }

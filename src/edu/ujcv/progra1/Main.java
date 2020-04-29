@@ -8,34 +8,41 @@ import static edu.ujcv.progra1.Alumnos.AlumnosAleatorios;
 public class Main {
 
     public static void main(String[] args) {
-        MenuPrincipal menu = new MenuPrincipal();
-        Random r = new Random();
-        Scanner sc = new Scanner(System.in);
+        MenuPrincipal menu = new MenuPrincipal();   Random r = new Random();  Scanner sc = new Scanner(System.in);
         Lectorteclado lc = new Lectorteclado();
+
+
         System.out.print(MenuPrincipal.MenuPrincipal());
+
+
         Lectorteclado lt;
+
+
         int Opc = lt.obtenerEnteroValidado("Ingrese una Opcion Valida");
 
-        ArrayList<String> alumnosGenerados = new ArrayList<>();
-        ArrayList<String> claseA = new ArrayList<String>();
-        ArrayList<Boolean> notasA = new ArrayList<Boolean>();
-        ArrayList<String> claseC = new ArrayList<String>();
-        ArrayList<Boolean> notasC = new ArrayList<Boolean>();
-        ArrayList<String> claseB = new ArrayList<String>();
-        ArrayList<Boolean> notasB = new ArrayList<Boolean>();
-        ArrayList<String> claseD = new ArrayList<String>();
-        ArrayList<Boolean> notasD = new ArrayList<Boolean>();
-        ArrayList<String> claseE = new ArrayList<String>();
-        ArrayList<Boolean> notasE = new ArrayList<Boolean>();
-        ArrayList<String> alumnosExpulsados = new ArrayList<String>();
+        ArrayList<String> alumnosGenerados = new ArrayList<>();ArrayList<String> claseA = new ArrayList<String>();
+        ArrayList<Boolean> notasA = new ArrayList<Boolean>();ArrayList<String> claseC = new ArrayList<String>();
+        ArrayList<Boolean> notasC = new ArrayList<Boolean>();ArrayList<String> claseB = new ArrayList<String>();
+        ArrayList<Boolean> notasB = new ArrayList<Boolean>();ArrayList<String> claseD = new ArrayList<String>();
+        ArrayList<Boolean> notasD = new ArrayList<Boolean>();ArrayList<String> claseE = new ArrayList<String>();
+        ArrayList<Boolean> notasE = new ArrayList<Boolean>();ArrayList<String> alumnosExpulsados = new ArrayList<String>();
         int matriculados = (int) (r.nextDouble() * 5 + 6);
         int x = 0;
         while (x == 0) {
+
+
+
             menu.MenuPrincipal();
             try {
+
                 int opcion = sc.nextInt();
+
+
                 switch (opcion) {
                     case 1:
+
+
+
                         for (int i = 0; i < matriculados; i++) {
                             alumnosGenerados.add(AlumnosAleatorios());
                         }
